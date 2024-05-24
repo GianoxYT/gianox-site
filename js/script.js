@@ -8,7 +8,7 @@ function getLatestVideos() {
   fetch(url)
     .then(response => response.json())
     .then(data => {
-      const videos = data.items.filter(item => item.id.kind === 'youtube#video');
+      const videos = data.items.filter(item => item.id.kind === 'youtube#video' && !item.id.videoId.includes('short'));
       videos.forEach(video => {
         const thumbnailUrl = video.snippet.thumbnails.medium.url;
         const videoId = video.id.videoId;
