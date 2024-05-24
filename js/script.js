@@ -8,7 +8,7 @@ function getLatestVideos() {
   fetch(url)
     .then(response => response.json())
     .then(data => {
-      const videos = data.items.filter(item => item.id.kind === 'youtube#video' && !item.id.videoId.includes('short') && item.id.videoId.length > 11);
+      const videos = data.items.filter(item => item.id.kind === 'youtube#video');
       videos.forEach(video => {
         const thumbnailUrl = video.snippet.thumbnails.medium.url;
         const videoId = video.id.videoId;
@@ -39,4 +39,4 @@ function displayVideoThumbnail(thumbnailUrl, videoId, title) {
 }
 
 // Appel de la fonction pour récupérer et afficher les vidéos au chargement de la page
-document.addEventListener('DOMContentLoaded', getLatestVideos);
+window.onload = getLatestVideos;
