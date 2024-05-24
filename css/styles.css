@@ -1,0 +1,89 @@
+/* Style de base pour la page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Fond gris pour tout le site */
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px; /* Ajout de la marge supérieure pour déplacer les boutons de navigation vers le bas */
+}
+
+.nav-button {
+  color: #007BFF; /* Couleur bleue pour les boutons de navigation */
+  text-decoration: none;
+  padding: 10px;
+  background-color: white; /* Fond blanc pour les boutons de navigation */
+  border: 1px solid #007BFF; /* Bordure bleue pour les boutons de navigation */
+  border-radius: 5px;
+}
+
+.nav-button:hover {
+  background-color: #007BFF;
+  color: white; /* Changement de couleur au survol */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px; /* Éloignement du titre par rapport à la photo de profil */
+}
+
+img {
+  border-radius: 50%; /* Pour le contour rond autour de la photo de profil */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  margin-bottom: 5px; /* Éloignement de la photo de profil par rapport aux infos de la chaîne */
+}
+
+.channel-info {
+  margin-bottom: 20px; /* Éloignement des infos de la chaîne par rapport aux miniatures */
+}
+
+footer {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.social-links {
+  background-color: white; /* Fond blanc pour le conteneur des réseaux sociaux */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  display: inline-block; /* Pour adapter la taille au contenu */
+  margin-top: 20px; /* Éloignement du haut */
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 50px; /* Espacement entre les icônes des réseaux sociaux */
+}
+
+.social-links a img {
+  width: 40px; /* Taille des logos réduite à 40px */
+}
+
+.miniature-container {
+  text-align: center; /* Centrer les miniatures */
+}
+
+.miniature {
+  display: inline-block;
+  margin: 0 10px; /* Espacement entre les miniatures */
+}
+
+.rectangle-blanc {
+  background-color: white; /* Fond blanc */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  padding: 20px;
+  margin-top: 20px; /* Éloignement du haut */
+  text-align: center;
+}
